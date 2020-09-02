@@ -34,7 +34,11 @@ int main(void)
         printf("b[%0d] = %d\n", i, b[i]);
     }
     
-    
+    int c[10] = {5, 6, 7, 8, 9};
+    for (i = 0; i < 10; i++)
+    {
+        printf("c[%0d] = %d\n", i, c[i]);
+    }
     return 0;
 
 }
