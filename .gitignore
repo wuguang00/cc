@@ -1,3 +1,4 @@
+// add the rules for ignore some files with the patterns below.
 *.old
 all
 *.out
@@ -74,3 +75,4 @@ patches
 /arch/*/common/asm-offsets.s
 /arch/*/boot/hvep.bin
 hvep-*
+
