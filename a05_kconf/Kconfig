@@ -1,0 +1,10 @@
+mainmenu "Kbuild Test by Andy"
+menu TEST_KBUILD_ANDY
+    config ARM
+    tristate "enable gcc arm form andy and 2020-08-17 20:13:26"
+    config x86
+    bool "enable gcc x86 from andy 2020-08-17 20:13:17"
+    config MYPRINT
+    bool "enable myprint.c from andy 2020-08-17 20:13:10"
+endmenu
+
