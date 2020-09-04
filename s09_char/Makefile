@@ -11,6 +11,9 @@ all:: chars.c
 	gcc $< -o $@
 	./$@
 
+# the function about this below item? Need to check again.
+# %::
+# 	touch $@
 # # The second will be executed.
 # all: char.c
 # 	gcc $< -o $@
