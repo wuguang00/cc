@@ -1,8 +1,8 @@
 /**************************************************************************
- File Name:     char.c
+ File Name:     chars.c
  Author:        wuguang
  E-mail:        wuguang20084520@163.com
- Created Time:  Wed Sep  2 00:05:04 2020
+ Created Time:  Fri 04 Sep 2020 08:03:24 AM CST
  Release Notes: 
  **************************************************************************/
 #include<stdio.h>
@@ -36,13 +36,13 @@ int main(void)
 
 
     char cc;
-    printf("\nInput a character from the terminal:\n");
+    printf("\nA char:\n");
     scanf("%c", &cc);
     printf("%c\n", cc);
     printf("Easy codes, but you should try it yourself and type it yourself. Practice makes perfect.\n");
 
     char str1[5], str2[5], str3[5];
-    printf("\nInput 3 strings from the terminal:\n");
+    printf("\n3 strings:\n");
     scanf("%s%s%s", str1, str2, str3);
     printf("%s\n", str1);
     puts(str1);
@@ -52,10 +52,11 @@ int main(void)
     puts(str3);
 
     char str[13];
-    printf("\nInput 1 string from the terminal:\n");
+    printf("\b1 string:\n");
     scanf("%s", str);
     printf("%s\n", str);
     puts(str);
 
     return 0;
+
 }
