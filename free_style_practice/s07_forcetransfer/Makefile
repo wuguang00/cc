@@ -1,8 +1,8 @@
 MAKEFLAGS := -B
-# %.c, it will search the file with suffix .c
 
+# %.c, it will search the file with suffix .c
 all: forcetran.c
-	gcc $< -o $@
-	./$@
+	gcc $< -o $@.out
+	./$@.out
 clean:
 	rm -rf all
