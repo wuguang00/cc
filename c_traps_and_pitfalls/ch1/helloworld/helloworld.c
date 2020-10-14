@@ -1,5 +1,5 @@
 /**************************************************************************
- File Name:     helloworld.c
+ File Name:     .c
  Author:        wuguang
  E-mail:        wuguang20084520@163.com
  Created Time:  Wed 09 Sep 2020 10:56:22 AM CST
@@ -7,7 +7,7 @@
  **************************************************************************/
 #include<stdio.h>
 #define N 8
-void main()
+int main()
 {
     printf("Hello, world!\n");
     int i;
@@ -21,4 +21,5 @@ void main()
     {
         printf("a[%0d] = %d\n", i, a[i]);
     }
+    return 0;
 }
