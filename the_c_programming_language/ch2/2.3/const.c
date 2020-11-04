@@ -6,7 +6,7 @@
  Release Notes: 
  **************************************************************************/
 #include<stdio.h>
-
+int strlen1(char s[]);
 // const
 // Use macro as the const
 
@@ -59,7 +59,84 @@ int main()
     printf("\\013: %c\n", VTAB);
     #define BELL '\017'
     printf("\\017: %c\n", BELL);
+    printf("\\017: %c\n", BELL);
+    printf("\\017: %c\n", BELL);
+    printf("\\017: %c\n", BELL);
+    printf("\\017: %c\n", BELL);
 
+    #define VTAB1 '\xb'
+    printf("\\xb: %c\n", VTAB1);
+    #define BELL1 '\x7' // contain a bell warning.
+    printf("\\x7: %c\n", BELL1);
+
+
+    puts("Another section to show the effects of the codes be executed.\n");
+
+    printf("\a\n"); // alarm
+    printf("\b\n"); // backspace
+    printf("\f\n"); // 
+    printf("\n\n"); // 
+    printf("\r\n"); // 
+    printf("\t\n"); // 
+    printf("\v\n"); // 
+    printf("\nEnter\n\n\n"); // just used to show the seprator
+
+    printf("\?\n"); // 
+    printf("\'\n"); // 
+    printf("\"\n"); // 
+    puts("\0");     // will be no warning for this kind of case.
+
+
+    #define MAXLINE 1000
+    char line[MAXLINE+1];
+    #define LEAP 1                                      // leap year
+    int days[31+28+LEAP+31+30+31+30+31+31+30+31+30+31]; // define a variable to contain every day in a year.
+
+    puts("I am a string");
+    puts("a, ""I am a string");
+    puts( "a, ""I am a string");
+    puts( "a, ""I am a string" );
+    puts( "a, " "I am a string" ); // puts contain an enter automatically.
+    printf( "\na, " "I am a string\n" );
+
+    int len; 
+    #define AAAA "I am a string."
+    len = strlen1(AAAA);
+
+    printf("%0d\n", len);
+
+    enum boolean {NO, YES};
+    printf("%0d\n", NO);
+    printf("%0d\n", YES);
+
+    enum escapes { BELL2 = '\a', BACKSPACE = '\b', TAB2 = '\t',
+                   NEWLINE = '\n', VTAB2 = '\v', RETURN = '\r'
+                 };
+    enum months  { JAN = 1,
+                   FEB,
+                   MAR,
+                   APR,
+                   MAY,
+                   JUN,
+                   JUL,
+                   AUG,
+                   SEP,
+                   OCT,
+                   NOV,
+                   DEC
+                 };
+
+    printf("%0d\n", RETURN);
+    printf("%0d\n", DEC);
 
     return 0;
+}
+
+int strlen1(char s[])
+{
+    int i;
+    i = 0;
+    while(s[i] != '\0')
+        ++i;
+    return i;
 }
