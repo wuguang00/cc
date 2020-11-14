@@ -18,6 +18,7 @@ int main(void)
 {
     int a;
     int i;
+
     for (i = 0; i < 8; i++)
         printf("%0d: A\n", i);
 
