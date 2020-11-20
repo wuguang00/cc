@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     int i;
 
     printf("Program name %s.\n", argv[0]);
+
     if (argc == 2)
     {
         for (i = 0; i < argc; i++)
@@ -21,6 +22,11 @@ int main(int argc, char *argv[])
     }
     else if ( argc >= 2)
     {
+        printf("You have input %0d parameters.", argc);
+        for (i = 0; i < argc; i++)
+        {
+            printf("The argument[%0d]: is %s\n", i, argv[i]);
+        }
         printf("Too many arguments supplied.\n");
     }
     else
